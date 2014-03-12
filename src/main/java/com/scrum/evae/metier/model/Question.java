@@ -80,10 +80,10 @@ public class Question implements Serializable {
         this.intitulé = intitulé;
     }
 
+	@Override
+	public String toString() {
+		return "Question [" + idQuestion + "]" + intitulé
+				+ " ";
+	}
 
-    @Override
-    public String toString() {
-        return "Enseignant.Gestionnaire.Question[ idQuestion=" + idQuestion + " ]";
-    }
-    
 }
